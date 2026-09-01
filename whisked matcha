@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Whisked Matcha</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f4ec;
+      color: #263b25;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f7f4ec;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: #e6eddb;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin: 0 0 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin: 0;
+    }
+
+    .benefits {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      padding: 28px 20px;
+      background: white;
+    }
+
+    .products {
+      padding: 55px 7%;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    .product-grid {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .product-image {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+
+    .product h3 {
+      font-size: 22px;
+      margin: 5px 0 10px;
+    }
+
+    .product p {
+      line-height: 1.5;
+    }
+
+    .price {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 18px 0;
+    }
+
+    .buy-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background: #294b27;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .buy-button:hover {
+      opacity: 0.9;
+    }
+
+    .coming-soon {
+      text-align: center;
+      padding: 35px 20px;
+      color: #64725f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: #263b25;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">WHISKED MATCHA</div>
+    <div>Premium matcha • Delivered</div>
+  </header>
+
+  <section class="hero">
+    <h1>Whisked Matcha</h1>
+    <p>Premium matcha for your daily ritual.</p>
+  </section>
+
+  <div class="benefits">
+    <div>✓ Fresh & carefully packed</div>
+    <div>✓ UK delivery</div>
+    <div>✓ Secure checkout</div>
+  </div>
+
+  <section class="products">
+
+    <h2>Shop the Drop</h2>
+
+    <div class="product-grid">
+
+      <!-- DAILY CEREMONIAL MATCHA -->
+
+      <div class="product">
+
+        <img
+          class="product-image"
+          src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&w=900&q=80"
+          alt="Matcha">
+
+        <h3>Daily Ceremonial Matcha</h3>
+
+        <p>
+          Premium ceremonial-grade matcha,
+          perfect for a smooth and vibrant daily cup.
+        </p>
+
+        <div class="price">£24.00</div>
+
+        <a
+          class="buy-button"
+          href="https://buy.stripe.com/7sY9AU3xa2166Iw7663AY00">
+          Buy Now
+        </a>
+
+      </div>
+
+
+      <!-- SECOND PRODUCT -->
+
+      <div class="product">
+
+        <h3>Matcha Starter Set</h3>
+
+        <p>
+          Everything you need to start your
+          Whisked Matcha ritual.
+        </p>
+
+        <div class="coming-soon">
+          Coming soon
+        </div>
+
+      </div>
+
+
+      <!-- THIRD PRODUCT -->
+
+      <div class="product">
+
+        <h3>Whisked Matcha Bundle</h3>
+
+        <p>
+          A selection of our favourite matcha
+          products in one bundle.
+        </p>
+
+        <div class="coming-soon">
+          Coming soon
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Whisked Matcha
+  </footer>
+
+</body>
+</html>
